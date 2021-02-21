@@ -32,10 +32,9 @@
     <!-- Favicon and touch icons  -->
     <link href="./views/asset/icon/favicon.png" rel="shortcut icon">
 
-    <!--[if lt IE 9]>
-        <script src="javascript/html5shiv.js"></script>
-        <script src="javascript/respond.min.js"></script>
-    <![endif]-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./views/js/app.js"></script>
 </head>
 
 <body class="header_sticky header-style-1 topbar-style-1 has-menu-extra">
@@ -69,8 +68,8 @@
                             <a class="icon_login" href="#"></a>
                         </li>
                         <li class="box-cart nav-top-cart-wrapper">
-                            <a class="icon_cart nav-cart-trigger active" href="#"></a>
-                            <div class="nav-shop-cart">
+                            <a class="icon_cart nav-cart-trigger active" href="index.php?act=cartview"></a>
+                            <!-- <div class="nav-shop-cart">
                                 <div class="widget_shopping_cart_content">
                                     <div class="woocommerce-min-cart-wrap">
                                         <ul class="woocommerce-mini-cart cart_list product_list_widget ">
@@ -78,16 +77,16 @@
                                                 <span>Chưa có sản phẩm nào</span>
                                             </li>
                                         </ul>
-                                    </div><!-- /.widget_shopping_cart_content -->
+                                    </div>.widget_shopping_cart_content 
                                 </div>
-                            </div><!-- /.nav-shop-cart -->
+                            </div>/.nav-shop-cart -->
                         </li>
                     </ul><!-- /.menu-extra -->
                     <div class="nav-wrap">
                         <nav id="mainnav" class="mainnav">
                             <ul class="menu">
                                 <li class="active">
-                                    <a href="<?=SITE_URL?>">TRANG CHỦ</a>
+                                    <a href="<?= SITE_URL ?>">TRANG CHỦ</a>
                                 </li>
                                 <li>
                                     <a href="shop-3col.html">SẢN PHẨM</a>
@@ -97,8 +96,8 @@
                                     <ul class="submenu">
                                         <?php foreach ($this->model->nhaSX() as $brand) {
                                         ?>
-                                        <li><a href="?act=cat&id=<?= $brand['idNSX']?>"><?= $brand['TenNSX'] ?></a></li>
-                                        <?php }?>
+                                            <li><a href="?act=cat&id=<?= $brand['idNSX'] ?>"><?= $brand['TenNSX'] ?></a></li>
+                                        <?php } ?>
                                     </ul>
                                 </li>
                                 <li>

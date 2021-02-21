@@ -140,7 +140,7 @@
                                 </ul> -->
                                 </div>
                                 <div class="add-to-cart text-center">
-                                    <a href="#">THÊM VÀO GIỎ</a>
+                                    <a onclick="addCart(<?= $item['idDT'] ?>)">THÊM VÀO GIỎ</a>
                                 </div>
                                 <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                             </li>
@@ -222,7 +222,7 @@
                                     </div>
                                 </div>
                                 <div class="add-to-cart text-center">
-                                    <a href="#">THÊM VÀO GIỎ</a>
+                                    <a onclick="addCart(<?= $item['idDT'] ?>)">THÊM VÀO GIỎ</a>
                                 </div>
                                 <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
                             </li>

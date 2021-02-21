@@ -41,14 +41,14 @@
                     <div class="inner">
                         <div class="content-detail">
                             <h2 class="product-title"><?= $sp['TenDT'] ?></h2>
-                            <div class="flat-star style-1">
+                            <!-- <div class="flat-star style-1">
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half-o"></i>
                                 <i class="fa fa-star-half-o"></i>
                                 <span>(1)</span>
-                            </div>
+                            </div> -->
                             <p><?= cut_string($sp['MoTa'], 300, '...')  ?></p>
                             <div class="price margin-top-30">
                                 <?php if (isset($sp['GiaKM'])) { ?>
@@ -66,11 +66,11 @@
                                 <?php } ?>
                             </div>
                             <div class="product-quantity margin-top-44">
-                                <div class="quantity">
+                                <!-- <div class="quantity">
                                     <input type="text" value="1" name="quantity-number" class="quantity-number">
                                     <span class="inc quantity-button">+</span>
                                     <span class="dec quantity-button">-</span>
-                                </div>
+                                </div> -->
                                 <div class="add-to-cart">
                                     <a href="#">THÊM VÀO GIỎ HÀNG</a>
                                 </div>
